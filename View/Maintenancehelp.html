@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Public Home</title>
+</head>
+
+<body background="../Asset/bg.jpg">
+        <tr>
+            <td>
+                <center>
+                <h3><a href="home.html">BACK</a></h3>
+            </center>
+                <fieldset>
+                    <legend><b>Ask For Maintenance Help</b></legend>
+                    <form method="post" action="../Controller/Maintenancecheck.php">
+                        <table>
+                            <tr>
+                                <td> Name:</td>
+                                <td><input type="text" name="name" value="" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="email" value="" required="required"></td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>User Name:</td>
+                                <td><input type="text" name="username" value="" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td> Help:</td>
+                                <td>
+                                <select name="bn">
+                                    <option value="Repairing" selected>Car Repairing</option>
+                                    <option value="Exchanging">Car Exchanging</option>
+                                    <option value="Material changing">Material Changing</option>
+                                    <option value="Other">Other</option>
+                                    
+                                </select>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td> Send To:</td>
+                                <td>
+                                <select name="bn">
+                                    <option value="Manager" selected>Manager</option>
+                                    <option value="Helping desk">Helping Section</option>
+                                   
+                                    
+                                    
+                                </select>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                        </table>
+                        <div align="left">
+                            <br>
+                            <input type="submit" name="submit" value="Submit" id="">
+                            <input type="reset" name="reset" value="Reset" id="">
+                        </div>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </td>
+    </tr>
+
+</body>
+
+</html>

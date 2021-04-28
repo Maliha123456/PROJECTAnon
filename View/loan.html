@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Public Home</title>
+</head>
+
+<body background="../Asset/bg.jpg">
+        <tr>
+            <td>
+                <center>
+                <h3><a href="home.html">BACK</a></h3>
+            </center>
+                <fieldset>
+                    <legend><b>Ask For Loan</b></legend>
+                    <form method="post" action="../Controller/loancheck.php">
+                        <table>
+                            <tr>
+                                <td> Name:</td>
+                                <td><input type="text" name="name" value="" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="email" value="" required="required"></td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>User Name:</td>
+                                <td><input type="text" name="username" value="" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>Reason:</td>
+                                <td><input type="text" name="username" value="" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td> Bank Loan:</td>
+                                <td>
+                                <select name="bn">
+                                    <option value="Dhaka Bank" selected>Dhaka Bank</option>
+                                    <option value="Dutch Bangla Bank">Dutch Bangla Bank</option>
+                                    <option value="UCB">United Commercial Bank</option>
+                                    <option value="Sonali Bank">Sonali Bank</option>
+                                    
+                                </select>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                        </table>
+                        <div align="left">
+                            <br>
+                            <input type="submit" name="submit" value="Submit" id="">
+                            <input type="reset" name="reset" value="Reset" id="">
+                        </div>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </td>
+    </tr>
+
+</body>
+
+</html>

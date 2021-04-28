@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Public Home</title>
+</head>
+
+<body background="../Asset/bg.jpg">
+        <div class="main" id="home">
+            <br />
+            <h3 align="center">
+                <font face="sans" size="4">
+                    <a href="../index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="login.php">LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="registration.html">REGISTRATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </font>
+            </h3>
+                </div>
+
+        <tr>
+            <td>
+                <fieldset>
+                    <legend><b>Registration</b></legend>
+                    <form method="post" action="../Controller/Public_reg_validation.php">
+                        <table>
+                            <tr>
+                                <td> Name:</td>
+                                <td><input type="text" name="name" id="name"  onkeyup="nameValidation()"></td>
+                            </tr>
+                           
+                            <tr>
+                <td></td>
+                <td id="nameErorr">
+                </td>
+            </tr>
+             <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="email" id="email" onkeyup="emailValidation()"></td>
+
+                            </tr>
+                                        <tr>
+                <td></td>
+                <td id="emailErorr">
+                </td>
+            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>User Name:</td>
+                                <td><input type="text" name="username" id="userName" onkeyup="userNameValidation()"></td>
+                            </tr>
+                                        <tr>
+                <td></td>
+                <td id="userNameErorr">
+                </td>
+            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="password" id="password" onkeyup="passwordValidation()"></td>
+
+                            </tr>
+                                        <tr>
+                <td></td>
+                <td id="passwordErorr">
+                </td>
+            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password:</td>
+                                <td><input type="password" name="confirm_password" id="confirm_password" onkeyup="confirm_passwordValidation()"></td>
+                            </tr>
+                                        <tr>
+                <td></td>
+                <td id="confirm_passwordErorr">
+                </td>
+            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                        </table>
+                        <div align="left">
+                            <br>
+                            <input type="submit" name="submit" value="Submit" id="">
+                            <input type="reset" name="reset" value="Reset" id="">
+                        </div>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </td>
+    </tr>
+       <script>
+   function nameValidation() {
+  var name,msg ;
+  name = document.getElementById("name").value;
+  if (name=="") {
+          msg = "null submission not allow";
+        } 
+        
+          else {
+            msg = ""
+          }   
+        
+        
+
+        document.getElementById("nameErorr").innerHTML = msg;
+      }
+       function emailValidation() {
+  var email,msg ;
+  email = document.getElementById("email").value;
+  if (email=="") {
+          msg = "email can not be empty";
+        } 
+        
+          else {
+            msg = ""
+          }   
+        
+        
+
+        document.getElementById("emailErorr").innerHTML = msg;
+      }
+   function userNameValidation() {
+  var username,msg ;
+  username = document.getElementById("userName").value;
+    
+        if (username=="") {
+        	msg ="username can not be empty"
+        }
+        else{
+        	msg=""
+        }
+        if (username.length<3 ) {
+          msg = "username must contain 3 character";
+        } 
+        
+          else {
+            msg = ""
+          }
+        
+
+        document.getElementById("userNameErorr").innerHTML = msg;
+      }
+         function passwordValidation() {
+  var password,msg ;
+  password = document.getElementById("password").value;
+  if (password.length<8) {
+          msg = "password must contain at least 8 character";
+        } 
+        
+          else {
+            msg = ""
+          }   
+        
+        
+
+        document.getElementById("passwordErorr").innerHTML = msg;
+      }
+            function confirm_passwordValidation() {
+  var password,confirm_password,msg ;
+   password = document.getElementById("password").value;
+  confirm_password = document.getElementById("confirm_password").value;
+   
+  if (confirm_password==password) {
+          msg = "password matched";
+        } 
+        
+          else {
+            msg = "wrong password"
+          }   
+        
+        
+
+        document.getElementById("confirm_passwordErorr").innerHTML = msg;
+      }
+       
+
+  </script>
+</body>
+
+</html>
